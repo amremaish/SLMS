@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0" prefWidth="533.0" style="-fx-background-color: #154360; -fx-border-color: #000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturemanagementdoctor.doctor.lecture.main.newRequest.StudentInfoWindow.StudentInfoWindowController">
+   <right>
+      <ImageView BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@/res/user_big.png" />
+         </image>
+         <BorderPane.margin>
+            <Insets right="30.0" top="-20.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </right>
+   <left>
+      <VBox prefHeight="184.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="30.0" top="20.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox prefHeight="36.0" prefWidth="330.0" spacing="40.0">
+               <children>
+                  <Text fill="#afedf5" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="username" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="330.0" spacing="75.0">
+               <children>
+                  <Text fill="#afedf5" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="email" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="43.0" prefHeight="36.0" prefWidth="330.0" spacing="67.0">
+               <children>
+                  <Text fill="#afedf5" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone :">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="phone" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="76.0" prefHeight="36.0" prefWidth="330.0" spacing="60.0">
+               <children>
+                  <Text fill="#afedf5" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender :">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="gender" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="109.0" prefHeight="36.0" prefWidth="330.0" spacing="20.0">
+               <children>
+                  <Text fill="#afedf5" strokeType="OUTSIDE" strokeWidth="0.0" text="Departement :">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="departement" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox fx:id="BorderBox" alignment="TOP_RIGHT" prefHeight="28.0" prefWidth="531.0" BorderPane.alignment="TOP_RIGHT">
+         <children>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#CloseAction" prefHeight="0.0" prefWidth="13.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@/res/close_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="-5.0" top="-3.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

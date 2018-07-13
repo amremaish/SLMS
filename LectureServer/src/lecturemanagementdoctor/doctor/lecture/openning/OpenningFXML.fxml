@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="749.0" style="-fx-border-color: #000; -fx-background-color: #2C3E4B;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturemanagementdoctor.doctor.lecture.openning.OpenningController">
+   <top>
+      <BorderPane fx:id="border" prefHeight="47.0" prefWidth="747.0" style="-fx-background-color: #85C1E9;" BorderPane.alignment="CENTER">
+         <right>
+            <HBox prefHeight="51.0" prefWidth="98.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#minAction" onMouseEntered="#minEnter" onMouseExited="#minExit" prefHeight="0.0" prefWidth="0.0">
+                     <graphic>
+                        <ImageView fx:id="min" fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/res/min.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#maxAction" onMouseEntered="#maxEnter" onMouseExited="#maxExit" prefHeight="14.0" prefWidth="7.0">
+                     <graphic>
+                        <ImageView fx:id="max" fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/res/max.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#closeAction" prefHeight="0.0" prefWidth="0.0">
+                     <graphic>
+                        <ImageView fx:id="close" fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/res/close_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+            </HBox>
+         </right>
+         <left>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Server Version" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets left="25.0" />
+               </BorderPane.margin>
+            </Text>
+         </left></BorderPane>
+   </top>
+   <right>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <right>
+            <StackPane fx:id="LoginStackPane" prefHeight="428.0" prefWidth="280.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" right="20.0" />
+               </BorderPane.margin>
+            </StackPane>
+         </right>
+         <left>
+            <StackPane prefHeight="534.0" prefWidth="1.0" style="-fx-background-color: #85C1E9;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="20.0" />
+               </BorderPane.margin>
+            </StackPane>
+         </left>
+      </BorderPane>
+   </right>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <ScrollPane fitToHeight="true" fitToWidth="true" maxWidth="1.7976931348623157E308" pannable="true" prefHeight="116.0" prefWidth="426.0" style="-fx-background-color: #00000000;" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+               <content>
+                  <HBox fx:id="doctorsBox" maxWidth="1.7976931348623157E308" prefHeight="113.0" prefWidth="424.0" spacing="20" style="-fx-background-color: #2C3E4B;" />
+               </content>
+            </ScrollPane>
+         </bottom>
+         <center>
+            <HBox fx:id="boxSlider">
+               <children>
+                  <ImageView fx:id="slideImageView" fitHeight="339.0" fitWidth="361.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+
+            </ImageView>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </center>
+
+</BorderPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #3a8abf;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturemanagementdoctor.doctor.lecture.main.profile.ProfileFXMLController">
+   <top>
+      <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../res/profile_picture.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Text fx:id="username" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" textAlignment="CENTER">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="email" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Mail">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="course" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Course">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="gender" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" textAlignment="CENTER">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <bottom>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onSaveChanges" prefHeight="30.0" ripplerFill="#1631ff" style="-fx-border-color: #5a8abf;" text="Save Changes" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onDeleteAccount" prefHeight="30.0" ripplerFill="#eb1111" style="-fx-border-color: #5a8abf;" text="Delete Account" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClearDatabase" prefHeight="30.0" ripplerFill="#fb2020" style="-fx-border-color: #5a8abf;" text="Clear Database" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0" style="-fx-background-color: #3a8abf;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <JFXTextField fx:id="phone" alignment="CENTER" focusColor="WHITE" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Phone Number" style="-fx-text-fill: #ffffff;" unFocusColor="#73d2f4" />
+            <JFXTextField fx:id="department" alignment="CENTER" focusColor="WHITE" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Department" style="-fx-text-fill: #ffffff;" unFocusColor="#73d2f4" />
+            <Separator maxWidth="1.7976931348623157E308" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Password" underline="true">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <JFXPasswordField fx:id="oldpassword" alignment="CENTER" focusColor="WHITE" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Old Password" style="-fx-text-fill: #ffffff;" unFocusColor="#73d2f4" />
+            <JFXPasswordField fx:id="newpassword" alignment="CENTER" focusColor="WHITE" labelFloat="true" promptText="New Password" style="-fx-text-fill: #ffffff;" unFocusColor="#73d2f4" />
+            <JFXPasswordField fx:id="confirmpassword" alignment="CENTER" focusColor="WHITE" labelFloat="true" promptText="Confirm New Password" style="-fx-text-fill: #ffffff;" unFocusColor="#73d2f4" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

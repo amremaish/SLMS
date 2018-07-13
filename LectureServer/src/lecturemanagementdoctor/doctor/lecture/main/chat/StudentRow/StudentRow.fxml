@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="StudentRowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#EnteredRow" onMouseExited="#ExitRow" onMouseReleased="#clickAction" prefHeight="45.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturemanagementdoctor.doctor.lecture.main.chat.StudentRow.StudentRowController">
+   <center>
+      <Text fx:id="usernameTxt" fill="#3f3f3f" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="TOP_LEFT">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets left="10.0" top="15.0" />
+         </BorderPane.margin></Text>
+   </center>
+   <right>
+      <Circle fx:id="MsgNotifierCircle" fill="#4c95cd" radius="4.0" stroke="BLACK" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="15.0" />
+         </BorderPane.margin>
+      </Circle>
+   </right>
+   <left>
+      <ImageView BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../../../res/student.png" />
+         </image>
+         <BorderPane.margin>
+            <Insets left="15.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </left>
+</BorderPane>

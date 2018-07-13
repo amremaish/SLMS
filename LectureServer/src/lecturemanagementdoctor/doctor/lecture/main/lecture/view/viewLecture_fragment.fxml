@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderRoot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="369.0" prefWidth="660.0" style="-fx-border-color: #ffffff; -fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturemanagementdoctor.doctor.lecture.main.lecture.view.ViewLectureController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="46.0" prefWidth="571.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="locationTxt" fill="#214f83" strokeType="OUTSIDE" strokeWidth="0.0" text="0 / 0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="FastInputTxt" onKeyPressed="#fastLocAction" prefHeight="25.0" prefWidth="42.0" style="-fx-background-color: fff; -fx-border-color: #80B2D1; -fx-border-radius: 5;">
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" color="#c9c7c7" height="12.11" radius="5.5525" width="12.1" />
+               </effect>
+            </TextField>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#fullScreenAction" text="full screen">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../../../../../res/max.png" />
+                     </image>
+                     <effect>
+                        <DropShadow height="0.0" radius="0.0" width="0.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Shadow color="#498fbb" height="1.0" radius="0.0" width="0.0" />
+               </effect>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <right>
+      <JFXButton fx:id="nextButton" contentDisplay="GRAPHIC_ONLY" maxHeight="1.7976931348623157E308" onAction="#nextAction" text="prev" BorderPane.alignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="27.0" opacity="0.2">
+               <image>
+                  <Image url="@../../../../../res/right.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </graphic>
+         <effect>
+            <Shadow color="#498fbb" height="1.0" radius="0.0" width="0.0" />
+         </effect>
+      </JFXButton>
+   </right>
+   <left>
+      <JFXButton fx:id="prevButton" contentDisplay="GRAPHIC_ONLY" maxHeight="1.7976931348623157E308" onAction="#previousAction" text="prev" BorderPane.alignment="CENTER">
+         <effect>
+            <Shadow color="#498fbb" height="1.0" radius="0.0" width="0.0" />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="27.0" opacity="0.2" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../../../../../res/left.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </left>
+   <top>
+    <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#onClose" text="close" BorderPane.alignment="TOP_RIGHT">
+       <effect>
+          <Shadow color="RED" height="1.0" radius="0.0" width="0.0" />
+       </effect>
+    </JFXButton>
+   </top>
+</BorderPane>

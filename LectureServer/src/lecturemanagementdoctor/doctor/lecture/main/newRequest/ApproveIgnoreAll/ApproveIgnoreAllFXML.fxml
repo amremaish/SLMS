@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="185.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturemanagementdoctor.doctor.lecture.main.newRequest.ApproveIgnoreAll.ApproveIgnoreAllFXMLController">
+   <children>
+      <JFXButton onAction="#approveAllAction" prefHeight="25.0" prefWidth="98.0" text="Approve all">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@/res/checkmark-big.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </JFXButton>
+      <JFXButton onAction="#IgnoreAllAction" prefHeight="25.0" prefWidth="98.0" text="Ignore all">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@/res/cross-big.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</HBox>

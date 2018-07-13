@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="185.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturemanagementdoctor.doctor.lecture.main.newRequest.RequestFXMLController">
+   <children>
+      <HBox minHeight="-Infinity" prefHeight="17.0" prefWidth="134.0">
+         <children>
+            <Text fx:id="usernameText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="174.740234375">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_RIGHT" prefHeight="5.0" prefWidth="111.0">
+         <children>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" onAction="#approveButtonAction" prefHeight="15.0" prefWidth="15.0">
+               <graphic>
+                  <ImageView fitHeight="12.0" fitWidth="12.0">
+                     <effect>
+                        <DropShadow height="6.18" radius="2.59" width="6.18" />
+                     </effect>
+                     <image>
+                        <Image url="@/res/checkmark.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" onAction="#ignoreButtonAction" prefHeight="15.0" prefWidth="15.0">
+               <graphic>
+                  <ImageView fitHeight="10.0" fitWidth="10.0">
+                     <effect>
+                        <DropShadow height="6.18" radius="2.59" width="6.18" />
+                     </effect>
+                     <image>
+                        <Image url="@/res/cross.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" onAction="#infoButtonAction" prefHeight="15.0" prefWidth="15.0">
+               <effect>
+                  <DropShadow height="4.0" radius="1.5" width="4.0" />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="13.0" fitWidth="13.0">
+                     <effect>
+                        <GaussianBlur radius="0.48" />
+                     </effect>
+                     <image>
+                        <Image url="@/res/eye.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

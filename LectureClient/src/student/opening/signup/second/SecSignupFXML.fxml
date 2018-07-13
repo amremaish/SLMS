@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="SecSignUpPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="410.0" prefWidth="320.0" spacing="30.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.opening.signup.second.SecSignupFXMLController">
+    <children>
+        <JFXTextField fx:id="phone" focusColor="#85c1e9" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="45.0" promptText="Phone number" style="-fx-text-fill: #85c1e9;" unFocusColor="#85c1e9">
+            <font>
+                <Font size="15.0" />
+            </font>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+        </JFXTextField>
+        <JFXTextField fx:id="department" focusColor="#85c1e9" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="45.0" promptText="Department" style="-fx-text-fill: #85c1e9;" unFocusColor="#85c1e9">
+            <font>
+                <Font size="15.0" />
+            </font>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+        </JFXTextField>
+        <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="35.0" spacing="10.0">
+            <children>
+                <Text fill="#85c1e9" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+                </Text>
+                <JFXRadioButton fx:id="male" text="Male" textFill="#7ec8f8" toggleGroup="$gender">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="gender" />
+                    </toggleGroup>
+                </JFXRadioButton>
+                <JFXRadioButton fx:id="female" text="Female" textFill="#7ec8f8" toggleGroup="$gender">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXRadioButton>
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </HBox>
+        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#SignUpAction" prefHeight="36.0" prefWidth="186.0" style="-fx-background-color: #85C1E9;" text="Sign Up" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="10.0" right="10.0" />
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="320.0" spacing="5.0">
+            <children>
+                <Text fill="#c3c3c3" strokeType="OUTSIDE" strokeWidth="0.0" text="Did You forget info ?">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+                <Text fx:id="BackText" fill="#c3c3c3" onMouseEntered="#BackEnter" onMouseExited="#BackExit" onMouseReleased="#releaseBack" strokeType="OUTSIDE" strokeWidth="0.0" text="Back">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+            </children>
+            <VBox.margin>
+                <Insets left="-15.0" top="-15.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

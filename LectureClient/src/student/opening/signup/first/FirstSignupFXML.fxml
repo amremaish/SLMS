@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="FirstSignUpPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="432.0" prefWidth="327.0" spacing="30.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.opening.signup.first.FirstSignupFXMLController">
+    <children>
+        <JFXTextField fx:id="username" focusColor="#5eb5eb" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="45.0" promptText="Username" style="-fx-text-fill: #85c1e9;" unFocusColor="#85c1e9">
+            <font>
+                <Font size="15.0" />
+            </font>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+        </JFXTextField>
+        <JFXPasswordField fx:id="password" focusColor="#5eb3e8" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="45.0" promptText="Password" style="-fx-text-fill: #85c1e9;" unFocusColor="#85c1e9">
+            <font>
+                <Font size="15.0" />
+            </font>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+        </JFXPasswordField>
+        <JFXPasswordField fx:id="re_password" focusColor="#5eb3e8" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="45.0" promptText="Repeat Password" style="-fx-text-fill: #85c1e9;" unFocusColor="#85c1e9">
+            <font>
+                <Font size="15.0" />
+            </font>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+        </JFXPasswordField>
+        <JFXTextField fx:id="email" focusColor="#5eb5eb" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="45.0" promptText="Email" style="-fx-text-fill: #85c1e9;" unFocusColor="#85c1e9">
+            <font>
+                <Font size="15.0" />
+            </font>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+        </JFXTextField>
+        <Button alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#NextAction" prefHeight="36.0" style="-fx-background-color: #85C1E9;" text="Next" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="10.0" right="10.0" />
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Button>
+        <HBox alignment="CENTER" prefHeight="21.0" prefWidth="379.0" spacing="5.0">
+            <children>
+                <Text fill="#c3c3c3" strokeType="OUTSIDE" strokeWidth="0.0" text="You have an account ?">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+
+                <Label fx:id="LoginText" onMouseEntered="#enterLogin" onMouseExited="#exitLogin" onMousePressed="#LoginRelease" text="Login" textFill="#c3c3c3">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets left="-10.0" top="-15.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

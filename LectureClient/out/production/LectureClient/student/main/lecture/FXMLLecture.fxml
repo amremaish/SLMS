@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane fx:id="splitpane" dividerPositions="0.5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.main.lecture.FXMLLectureController">
+    <items>
+        <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+            <children>
+                <ImageView fx:id="current_page" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../res/b3.jpeg" />
+                    </image>
+                </ImageView>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </StackPane>
+        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <center>
+                <VBox fx:id="chat_box" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0" style="-fx-background-color: #effff7;" BorderPane.alignment="CENTER">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </VBox>
+            </center>
+            <bottom>
+                <JFXTextField fx:id="chat_text" focusColor="#2ecc71" labelFloat="true" maxWidth="1.7976931348623157E308" onAction="#onSendMessage" promptText="Write a Message to the Doctor" unFocusColor="#6ae88e" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="5.0" top="20.0" />
+                    </BorderPane.margin>
+                </JFXTextField>
+            </bottom>
+        </BorderPane>
+    </items>
+</SplitPane>

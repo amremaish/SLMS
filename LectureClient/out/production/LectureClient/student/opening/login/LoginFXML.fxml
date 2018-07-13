@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="LoginPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="395.0" prefWidth="300.0" spacing="30.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.opening.login.LoginFXMLController">
+    <children>
+        <JFXTextField focusColor="#2ecc71" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="45.0" promptText="Username" style="-fx-text-fill: #2ecc71;" unFocusColor="#6ae88e" VBox.vgrow="ALWAYS">
+            <font>
+                <Font size="15.0" />
+            </font>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+        </JFXTextField>
+        <JFXPasswordField focusColor="#2ecc71" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="45.0" promptText="Password" style="-fx-text-fill: #2ecc71;" unFocusColor="#6ae88e" VBox.vgrow="ALWAYS">
+            <font>
+                <Font size="15.0" />
+            </font>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+        </JFXPasswordField>
+        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="236.0" prefHeight="22.0" prefWidth="267.0" spacing="5.0">
+            <children>
+                <Label fx:id="forgotPassword" onMouseEntered="#forgotPasswordEnter" onMouseExited="#forgotPasswordExit" text="Forget Password ?" textFill="#c3c3c3">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Label>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <VBox.margin>
+                <Insets bottom="-10.0" left="10.0" right="10.0" top="-20.0" />
+            </VBox.margin>
+        </HBox>
+        <Button alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#LoginAction" style="-fx-background-color: #2ECC71;" text="Login" textFill="WHITE" VBox.vgrow="ALWAYS">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="10.0" right="10.0" />
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <HBox alignment="CENTER" prefHeight="22.0" prefWidth="267.0" spacing="5.0">
+            <children>
+                <Label text="Don't have an account yet ?" textFill="#c2c2c2">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="SignUpText" onMouseEntered="#SignUpEnter" onMouseExited="#SignUpExit" onMouseReleased="#SignUpRelease" text="SignUp" textFill="#2ecc71">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets top="-15.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

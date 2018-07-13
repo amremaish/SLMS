@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="749.0" style="-fx-border-color: #000; -fx-background-color: #2C3E4B;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.opening.OpenningController">
+   <top>
+      <BorderPane fx:id="border" prefHeight="47.0" prefWidth="747.0" style="-fx-background-color: #85C1E9;" BorderPane.alignment="CENTER">
+         <right>
+            <HBox prefHeight="51.0" prefWidth="98.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#minAction" onMouseEntered="#minEnter" onMouseExited="#minExit" prefHeight="0.0" prefWidth="0.0">
+                     <graphic>
+                        <ImageView fx:id="min" fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../res/min.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#maxAction" onMouseEntered="#maxEnter" onMouseExited="#maxExit" prefHeight="14.0" prefWidth="7.0">
+                     <graphic>
+                        <ImageView fx:id="max" fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../res/max.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#closeAction"  prefHeight="0.0" prefWidth="0.0">
+                     <graphic>
+                        <ImageView fx:id="close" fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../res/close_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+            </HBox>
+         </right>
+         <left>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Student version" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="20.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </left></BorderPane>
+   </top>
+   <right>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <right>
+            <StackPane fx:id="LoginStackPane" prefHeight="428.0" prefWidth="280.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" right="20.0" />
+               </BorderPane.margin>
+            </StackPane>
+         </right>
+         <left>
+            <StackPane prefHeight="534.0" prefWidth="1.0" style="-fx-background-color: #85C1E9;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="20.0" />
+               </BorderPane.margin>
+            </StackPane>
+         </left>
+      </BorderPane>
+   </right>
+   <center>
+      <ImageView fx:id="slideImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="30.0" />
+         </BorderPane.margin></ImageView>
+   </center>
+
+</BorderPane>

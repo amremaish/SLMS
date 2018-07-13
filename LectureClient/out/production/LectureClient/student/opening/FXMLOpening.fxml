@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.opening.FXMLOpeningController">
+    <children>
+        <Pane fx:id="open_pane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="583.0" prefWidth="749.0" style="-fx-background-image: url(/res/background.jpg); -fx-background-repeat: no-repeat; -fx-background-size: cover;" />
+        <BorderPane fx:id="mainPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="749.0" style="-fx-border-color: #000;">
+            <center>
+                <StackPane fx:id="LoginStackPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="428.0" prefWidth="280.0" style="-fx-background-color: #00000000;" BorderPane.alignment="CENTER" />
+            </center>
+            <top>
+                <BorderPane fx:id="border" prefHeight="47.0" prefWidth="747.0" style="-fx-background-color: #2ECC71;" BorderPane.alignment="CENTER">
+                    <right>
+                        <HBox prefHeight="51.0" prefWidth="98.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#minAction" onMouseEntered="#minEnter" onMouseExited="#minExit" prefHeight="0.0" prefWidth="0.0">
+                                    <graphic>
+                                        <ImageView fx:id="min" fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../res/min.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#maxAction" onMouseEntered="#maxEnter" onMouseExited="#maxExit" prefHeight="14.0" prefWidth="7.0">
+                                    <graphic>
+                                        <ImageView fx:id="max" fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../res/max.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#closeAction" onMouseEntered="#closeEnter" onMouseExited="#closeExit" prefHeight="0.0" prefWidth="0.0">
+                                    <graphic>
+                                        <ImageView fx:id="close" fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../res/close.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                            <BorderPane.margin>
+                                <Insets top="10.0" />
+                            </BorderPane.margin>
+                        </HBox>
+                    </right>
+                </BorderPane>
+            </top>
+        </BorderPane>
+    </children>
+</StackPane>

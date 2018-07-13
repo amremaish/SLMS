@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="MsgRoot" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: #004BA6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturemanagementdoctor.doctor.lecture.main.chat.MessageBlock.MessageBlockFXMLController">
+   <center>
+      <Text fx:id="msgTxt" fill="#e8e8e8" focusTraversable="true" strokeType="OUTSIDE" strokeWidth="0.0" text="text" textAlignment="RIGHT" wrappingWidth="175.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Text>
+   </center>
+   <right>
+      <ImageView fx:id="imgView" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <image>
+            <Image url="@../../../../../../res/doctor.png" />
+         </image>
+      </ImageView>
+   </right>
+</BorderPane>

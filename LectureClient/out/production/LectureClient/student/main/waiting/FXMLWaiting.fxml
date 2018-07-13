@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane fx:id="waiting_pane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+           minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="749.0"
+           style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="student.main.waiting.FXMLWaitingController">
+    <children>
+        <Text fx:id="waiting_text" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Waiting for Lecture"
+              textAlignment="CENTER">
+            <font>
+                <Font size="34.0"/>
+            </font>
+        </Text>
+    </children>
+</StackPane>

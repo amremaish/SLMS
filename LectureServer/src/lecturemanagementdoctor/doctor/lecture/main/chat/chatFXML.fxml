@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturemanagementdoctor.doctor.lecture.main.chat.ChatFXMLController">
+    <left>
+        <BorderPane prefHeight="437.0" prefWidth="204.0" BorderPane.alignment="CENTER">
+            <right>
+                <StackPane prefHeight="437.0" prefWidth="1.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </BorderPane.margin>
+                </StackPane>
+            </right>
+            <center>
+                <ScrollPane fx:id="ScrollPaneContacts" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <content>
+                        <VBox fx:id="student_contacts" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="391.0" prefWidth="188.0" style="-fx-background-color: #f2f2f2;" stylesheets="@../../../../../res/styleSheet.css" />
+                    </content>
+                    <BorderPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                    </BorderPane.margin>
+                </ScrollPane>
+            </center>
+        </BorderPane>
+    </left>
+    <center>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <center>
+                <StackPane fx:id="MsgPane" prefHeight="93.0" prefWidth="241.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ScrollPane fx:id="ScrollList" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vbarPolicy="ALWAYS">
+                            <content>
+                                <VBox fx:id="msgVBox" maxWidth="1.7976931348623157E308" prefHeight="306.0" prefWidth="379.0" spacing="10.0" style="-fx-background-color: #f2f2f2;" stylesheets="@../../../../../res/styleSheet.css">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <padding>
+                                        <Insets top="5.0" />
+                                    </padding>
+                                </VBox>
+                            </content>
+                            <StackPane.margin>
+                                <Insets />
+                            </StackPane.margin>
+                        </ScrollPane>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                    </BorderPane.margin>
+                </StackPane>
+            </center>
+            <bottom>
+                <HBox fx:id="SendPane" prefHeight="24.0" prefWidth="172.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <JFXTextField fx:id="msgTxt" focusColor="#359add" labelFloat="true" maxWidth="1.7976931348623157E308" prefWidth="1200.0" promptText="Send Message to Student" unFocusColor="#154360" />
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#SendActionButton" onMouseEntered="#MouseEnterButtons" onMouseExited="#MouseExitButtons" prefHeight="20.0" prefWidth="34.0" ripplerFill="#0c55e8">
+                            <graphic>
+                                <ImageView fitHeight="21.0" fitWidth="21.0">
+                                    <image>
+                                        <Image url="@../../../../../res/send.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+            </bottom>
+            <top>
+                <BorderPane prefHeight="55.0" prefWidth="396.0" BorderPane.alignment="CENTER">
+                    <left>
+                        <HBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="211.0" spacing="10.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <ImageView fitHeight="28.0" fitWidth="28.0">
+                                    <image>
+                                        <Image url="@../../../../../res/student.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="5.0" top="12.0" />
+                                    </HBox.margin>
+                                    <effect>
+                                        <ColorAdjust hue="0.05" saturation="1.0" />
+                                    </effect>
+                                </ImageView>
+                                <Text fx:id="usernameTxtMsg" fill="#3d3d3d" strokeType="OUTSIDE" strokeWidth="0.0" text="Nobody" wrappingWidth="165.162109375" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="System Bold" size="17.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" top="15.0" />
+                                    </HBox.margin>
+                                </Text>
+                            </children>
+                            <BorderPane.margin>
+                                <Insets />
+                            </BorderPane.margin>
+                        </HBox>
+                    </left>
+                    <BorderPane.margin>
+                        <Insets top="3.0" />
+                    </BorderPane.margin>
+                </BorderPane>
+            </top>
+        </BorderPane>
+    </center>
+</BorderPane>

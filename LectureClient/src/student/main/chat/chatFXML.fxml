@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.main.chat.ChatFXMLController">
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="53.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <JFXTextField fx:id="messageField" alignment="CENTER" focusColor="#143190" labelFloat="true" maxWidth="1.7976931348623157E308" prefWidth="600.0" promptText="Chat with Doctor" unFocusColor="#0c1136">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                    </HBox.margin>
+                </JFXTextField>
+                <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#SendActionButton" onMouseEntered="#MouseEnterButtons" onMouseExited="#MouseExitButtons" prefHeight="20.0" prefWidth="34.0" ripplerFill="#113886">
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="21.0">
+                            <image>
+                                <Image url="@../../../res/send.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+            </children>
+        </HBox>
+    </bottom>
+    <center>
+        <ScrollPane fx:id="scroll_box" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pannable="true" BorderPane.alignment="CENTER">
+           <content>
+               <VBox fx:id="chat_box" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="340.0" prefWidth="598.0" spacing="10.0">
+                   <padding>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </padding>
+               </VBox>
+           </content>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="10.0" top="10.0" />
+         </BorderPane.margin>
+        </ScrollPane>
+    </center>
+</BorderPane>

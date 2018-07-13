@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane id="AnchorPane" prefHeight="447.0" prefWidth="630.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturemanagementdoctor.doctor.lecture.main.absence.AbsenceFXMLController">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+   <top>
+      <BorderPane prefHeight="42.0" prefWidth="590.0" BorderPane.alignment="CENTER">
+         <center>
+            <StackPane prefHeight="14.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" text="Hint : only selected box that will be taken " textAlignment="CENTER" textFill="#2c3e4b" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER">
+         <children>
+            <JFXButton onAction="#takeUnSavedAction" prefHeight="32.0" prefWidth="198.0" style="-fx-background-color: #154360;" text="Take absence " textFill="WHITE" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+        <ListView fx:id="absenceList" prefHeight="360.0" prefWidth="201.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </ListView>
+   </center>
+</BorderPane>

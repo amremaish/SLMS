@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="801.0" style="-fx-border-color: #000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturemanagementdoctor.doctor.lecture.main.MainFXMLController">
+    <bottom>
+        <BorderPane prefHeight="38.0" prefWidth="799.0" style="-fx-background-color: #85C1E9;" BorderPane.alignment="CENTER">
+            <right>
+                <HBox prefHeight="34.0" prefWidth="87.0">
+                    <children>
+
+                        <AnchorPane maxHeight="-Infinity" prefHeight="25.0" prefWidth="25.0">
+                            <children>
+                                <MenuBar layoutY="4.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: transparent; -fx-border-color: transparent;;" stylesheets="/res/styleSheet.css">
+                                    <menus>
+                                        <Menu fx:id="menu_request" mnemonicParsing="false">
+                                            <items>
+                                                <CustomMenuItem hideOnClick="false" mnemonicParsing="false" text="Unspecified Action">
+                                                    <content>
+                                                        <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(211,211,211);" stylesheets="@/res/styleSheet.css">
+                                                            <content>
+                                                                <VBox fx:id="requestBox" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: rgb(211,211,211);" />
+                                                            </content>
+                                                        </ScrollPane>
+                                                    </content>
+                                                </CustomMenuItem>
+                                            </items>
+                                        </Menu>
+                                    </menus>
+                                </MenuBar>
+                                <StackPane fx:id="numOfRequestPane" layoutX="57.0" layoutY="-13.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="1.0">
+                                    <children>
+                                        <Rectangle fx:id="SignUpCounterRect" arcHeight="5.0" arcWidth="5.0" fill="#154360" height="17.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="INSIDE" width="18.0" />
+                                        <Text fx:id="SignUpCounterText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+                                            <font>
+                                                <Font name="System Bold" size="12.0" />
+                                            </font>
+                                            <effect>
+                                                <Bloom threshold="0.34" />
+                                            </effect>
+                                        </Text>
+                                    </children>
+                                </StackPane>
+                            </children>
+                            <HBox.margin>
+                                <Insets right="30.0" />
+                            </HBox.margin>
+                        </AnchorPane>
+                  
+                    </children>
+                    <BorderPane.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                    </BorderPane.margin>
+                </HBox>         
+            </right>
+            <left>
+                <HBox prefHeight="38.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+            </left>
+        </BorderPane>
+    </bottom>
+    <top>
+        <BorderPane fx:id="Border" prefHeight="40.0" prefWidth="801.0" style="-fx-background-color: #85C1E9;" BorderPane.alignment="CENTER">
+            <right>
+                <HBox alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="82.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#minAction" onMouseEntered="#minEnter" onMouseExited="#minExit" prefHeight="0.0" prefWidth="0.0">
+                            <graphic>
+                                <ImageView fx:id="min" fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/res/min.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#maxAction" onMouseEntered="#maxEnter" onMouseExited="#maxExit" prefHeight="14.0" prefWidth="7.0">
+                            <graphic>
+                                <ImageView fx:id="max" fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/res/max.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#closeAction" prefHeight="0.0" prefWidth="0.0">
+                            <graphic>
+                                <ImageView fx:id="close" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../res/close_1.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets right="5.0" />
+                    </BorderPane.margin>
+                </HBox>
+            </right>
+            <left>
+                <HBox prefHeight="28.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#profileAction" onMouseEntered="#iconEnter" onMouseExited="#iconExit" prefHeight="14.0" prefWidth="20.0">
+                            <graphic>
+                                <ImageView fx:id="profile" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/res/user.png" />
+                                    </image>
+                                    <effect>
+                                        <InnerShadow choke="1.0" color="#1d3243" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                            <HBox.margin>
+                            </HBox.margin>
+                        </JFXButton>
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#settingAction" onMouseEntered="#iconEnter" onMouseExited="#iconExit" prefHeight="0.0" prefWidth="20.0">
+                            <graphic>
+                                <ImageView fx:id="setting" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/res/settings.png" />
+                                    </image>
+                                    <effect>
+                                        <InnerShadow choke="1.0" color="#1d3243" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets left="5.0" top="5.0" />
+                    </BorderPane.margin>
+                </HBox>
+            </left>
+        </BorderPane>
+    </top>
+    <left>
+        <BorderPane fx:id="ListBordePane" prefHeight="464.0" prefWidth="162.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <center>
+                <VBox fx:id="list_box" prefHeight="464.0" prefWidth="152.0" spacing="5.0" style="-fx-background-color: #154360;" BorderPane.alignment="CENTER">
+                    <children>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#LectureClick" prefHeight="37.0" prefWidth="165.0" text="Lecture" textFill="#85c1e9">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/res/lecture.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#statClick" prefHeight="37.0" prefWidth="165.0" text="Statistics" textFill="#85c1e9">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/res/stat.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#QuizClick" prefHeight="37.0" prefWidth="165.0" text="Quiz" textFill="#85c1e9">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/res/quiz.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#AbsenseClick" prefHeight="37.0" prefWidth="165.0" text="Absence" textFill="#85c1e9">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/res/search.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#chatClick" prefHeight="37.0" prefWidth="165.0" text="Messages" textFill="#85c1e9">
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/res/chat.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </VBox>
+            </center>
+            <top>
+                <HBox alignment="CENTER_RIGHT" prefHeight="48.0" prefWidth="162.0" style="-fx-background-color: #154360;" BorderPane.alignment="CENTER">
+                    <children>
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#arrowAction" onMouseEntered="#arrowEntered" onMouseExited="#arrowExit" prefHeight="21.0" prefWidth="20.0">
+                            <graphic>
+                                <ImageView fx:id="arrow" fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/res/close_list.png" />
+                                    </image>
+                                    <effect>
+                                        <InnerShadow choke="1.0" color="#85c1e9" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+            </top>
+        </BorderPane>
+    </left>
+    <center>
+        <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+            <children>
+                <ScrollPane fx:id="dynamicScroller" fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pannable="true" />
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>
